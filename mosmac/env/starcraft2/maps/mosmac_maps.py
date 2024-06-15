@@ -5,8 +5,8 @@ from __future__ import print_function
 from pysc2.maps import lib
 
 
-class SMANCMap(lib.Map):
-    directory = "SMANC_Maps"
+class MOSMACMap(lib.Map):
+    directory = "MOSMAC_Maps"
     download = None  # todo: include the link for downloading the files here.
     players = 2
     step_mul = 8
@@ -211,4 +211,4 @@ def get_smac_map_registry():
 
 
 for name in map_param_registry.keys():
-    globals()[name] = type(name, (SMANCMap,), dict(filename=name))
+    globals()[name] = type(name, (MOSMACMap,), dict(filename=name))
