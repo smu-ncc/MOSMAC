@@ -1,0 +1,91 @@
+env: lhcfcws
+
+env_args:
+  continuing_episode: False
+  difficulty: "7"
+  game_version: null
+  map_name: "4t_vs_0t"
+  move_amount: 2
+  obs_all_health: True
+  obs_instead_of_state: False
+  obs_last_action: False
+  obs_own_health: True
+  obs_pathing_grid: False  # Agents observe the pathing grid in tasks with complex scenario.
+  obs_terrain_height: False
+  obs_timestep_number: False
+  reward_death_value: 10
+  reward_defeat: 0
+  reward_negative_scale: 0.5
+  reward_only_positive: True
+  reward_scale: True
+  reward_scale_rate: 20
+  reward_sparse: False
+  reward_win: 200
+  replay_dir: ""
+  replay_prefix: ""
+  state_last_action: False
+  state_timestep_number: False
+  step_mul: 8
+  seed: null
+  heuristic_ai: False
+  heuristic_rest: False
+  debug: False
+  # Agents observe additional direction and distance towards the final target in LMANC.
+  obs_direction_command: True
+  obs_distance_target: True
+  map_sps: {  # the locations of predefined strategic points.
+    0: [ 12.07, 36.92 ],
+    1: [ 33.36, 34.64 ],
+    2: [ 45.25, 42.38 ],
+    3: [ 27.04, 88.21 ],
+    4: [ 47.01, 104.75 ],
+    5: [ 74.69, 108.51 ],
+    6: [ 40.17, 8.29 ],
+    7: [ 63.94, 50.89 ],
+    8: [ 76.88, 71.08 ],
+    9: [ 73.08, 8.54 ],
+    10: [ 91.85, 23.38 ],
+    11: [ 116.55, 53.57 ],
+    12: [ 104.19, 77.89 ],
+    13: [ 110.25, 100.89 ]
+  }
+  final_target_index: 13
+  number_of_subtask: None  # how many subtasks that agents need to address/how many areas that agents need to occupy
+  path_sequences: [
+    [0, 1, 2, 3, 4, 5, 8, 12, 13],
+    [0, 1, 2, 3, 4, 5, 8, 12, 13],
+    [0, 1, 2, 3, 4, 5, 8, 12, 13],
+  ]
+  fixed_sequence: None
+
+  hierarchical: False
+  n_ally_platoons: 1
+  n_ally_agent_in_platoon: 4
+  n_enemy_platoons: 1
+  n_enemy_unit_in_platoon: 4
+
+  # limit the horizon of each episode
+  episode_limit: 500  # 60 for 1 subtask
+  momarl_setting: True
+
+
+test_greedy: True
+test_nepisode: 100
+test_interval: 50000
+log_interval: 50000
+runner_log_interval: 10000
+learner_log_interval: 10000
+t_max: 2050000
+
+# --- Logging options ---
+use_tensorboard: True # Log results to tensorboard
+save_model: True # Save the models to disk
+save_model_interval: 50000 # Save models after this many timesteps, default is 50,000
+checkpoint_path: "" # Load a checkpoint from this path
+evaluate: False # Evaluate model for test_nepisode episodes and quit (no training)
+render: False # Render the environment when evaluating (only when evaluate == True)
+load_step: 0 # Load model trained on this many timesteps (0 if choose max possible)
+save_replay: False # Saving the replay of the model loaded from checkpoint_path
+local_results_path: "results" # Path for local results
+
+cuda_id: '0'

@@ -1,0 +1,78 @@
+env: "shcfc_beta"
+
+env_args:
+  continuing_episode: False
+  difficulty: "7"
+  game_version: null
+  map_name: "10gen_terran"
+  move_amount: 2
+  obs_all_health: True
+  obs_instead_of_state: False
+  obs_last_action: False
+  obs_own_health: True
+  obs_pathing_grid: False   # Agents doesn't observe terrain features in scenarios without complex terrain by default.
+  obs_terrain_height: False
+  obs_timestep_number: False
+  reward_death_value: 10
+  reward_defeat: 0
+  reward_negative_scale: 0.5
+  reward_only_positive: True
+  reward_scale: True
+  reward_scale_rate: 20
+  reward_sparse: False
+  reward_win: 200
+  replay_dir: ""
+  replay_prefix: ""
+  state_last_action: False
+  state_timestep_number: False
+  step_mul: 8
+  seed: null
+  heuristic_ai: False
+  heuristic_rest: False
+  debug: False
+  # Agents observe additional direction and distance towards the final target in LMANC.
+  obs_direction_command: True
+  obs_distance_target: True
+
+  map_sps: {
+    0: [28.24, 39.35],
+    1: [110.38, 104.69],
+  }
+
+  hierarchical: False
+  n_ally_platoons: 1
+  n_ally_agent_in_platoon: 4
+  n_enemy_platoons: 1
+  n_enemy_unit_in_platoon: 4
+
+  alpha: 0.5 # the weight parameter for combat objective
+  momarl_setting: True
+
+  # select the reward objectives from the following list:
+  # ["reward_combat", "reward_navigation", "reward_safety"]
+  reward_objectives: [
+#    "reward_combat",
+#    "reward_safety",
+#    "reward_navigate",
+  ]
+
+test_greedy: True
+test_nepisode: 20
+test_interval: 50000
+log_interval: 50000
+runner_log_interval: 10000
+learner_log_interval: 10000
+t_max: 2050000
+
+# --- Logging options ---
+use_tensorboard: True # Log results to tensorboard
+save_model: True # Save the models to disk
+save_model_interval: 200000 # Save models after this many timesteps, default is 50,000
+checkpoint_path: "" # Load a checkpoint from this path
+evaluate: False # Evaluate model for test_nepisode episodes and quit (no training)
+render: False # Render the environment when evaluating (only when evaluate == True)
+load_step: 0 # Load model trained on this many timesteps (0 if choose max possible)
+save_replay: False # Saving the replay of the model loaded from checkpoint_path
+local_results_path: "results" # Path for local results
+
+cuda_id: 'cuda:0'
