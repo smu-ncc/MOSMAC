@@ -1,6 +1,17 @@
 # MOSMAC: A Multi-agent Reinforcement Learning Benchmark on Sequential Multi-Objective Tasks
-
 # Features
+<div style="display: flex; justify-content: space-between; align-items: flex-start;">
+  <figure style="width: 48%; margin: 0;">
+    <img src="/docs/imgs/short-horizon_mosmac.png" style="width: 100%;" />
+    <figcaption style="text-align: center;">An example of the short-horizon MOSMAC scenarios</figcaption>
+  </figure>
+  <figure style="width: 48%; margin: 0;">
+    <img src="/docs/imgs/long-horizon_mosmac.png" style="width: 100%;" /> 
+    <figcaption style="text-align: center;">An example of the long-horizon MOSMAC scenarios with complex terrains</figcaption>
+  </figure>
+</div>
+
+
 MOSMAC provides a set of multi-objective multi-agent reinforcement learning (MOMARL) tasks
 extending from [SMAC](https://github.com/oxwhirl/smac), which originally focused on
 single-objective multi-agent reinforcement learning (MARL) tasks in the StarCraft II environment.
