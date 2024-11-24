@@ -1,11 +1,11 @@
 # MOSMAC: A Multi-agent Reinforcement Learning Benchmark on Sequential Multi-Objective Tasks
 # Features
 <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-  <figure style="width: 48%; margin: 0;">
+  <figure style="width: 44%; margin: 0;">
     <img src="/docs/imgs/short-horizon_mosmac.png" style="width: 100%;" />
     <figcaption style="text-align: center;">An example of the short-horizon MOSMAC scenarios</figcaption>
   </figure>
-  <figure style="width: 48%; margin: 0;">
+  <figure style="width: 44%; margin: 0;">
     <img src="/docs/imgs/long-horizon_mosmac.png" style="width: 100%;" /> 
     <figcaption style="text-align: center;">An example of the long-horizon MOSMAC scenarios with complex terrains</figcaption>
   </figure>
