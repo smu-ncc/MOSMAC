@@ -9,6 +9,23 @@
   <em>Left: Short-horizon MOSMAC scenarios (example: 4t); Right: Long-horizon MOSMAC scenarios with complex terrains </em>
 </p>
 
+> NEWS: MOSMAC has been accepted at AAMAS 2025 as a [full paper](https://gengminghong.github.io/assets/pdf/Geng%20et%20al.%20-%202025%20-%20MOSMAC%20A%20Multi-agent%20Reinforcement%20Learning%20Benchmark%20on%20Sequential%20Multi-objective%20Tasks.pdf). 
+> Please cite the full paper with the following BibTex:
+
+```
+@inproceedings{geng_mosmac_2025,
+    abbr={AAMAS 2025},
+    address = {Richland, SC},
+    series = {AAMAS'25},
+    title = {MOSMAC: A Multi-agent Reinforcement Learning Benchmark on Sequential Multi-objective Tasks},
+    booktitle = {Proceedings of the 24th International Conference on Autonomous Agents and Multiagent Systems},
+    publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+    author = {Geng, Minghong and Pateria, Shubham and Subagdja, Budhitama and Tan, Ah-Hwee},
+    month = may,
+    year = {2025},
+    html={https://aamas2025.org/index.php/conference/program/accepted-papers/},
+    }
+```
 
 # Features
 
